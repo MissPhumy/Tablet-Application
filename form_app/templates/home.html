@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+      <div class="container mt-1">
+        <img src="..\static\images\logo3.PNG" width="250" cladd="d-inline-block aligh-top">
+    </div>
+
+    <title>Operator Form</title>
+
+     <script src="../static/jquery/jquery.js"></script>
+     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+
+
+
+  </head>
+  <body>   
+
+      <h3 class="text-center">Operator Form</h3>
+
+    <form id="formData" class="mx-auto" style="max-width: 400px;">
+        
+      <div class="form-group">
+        <label for="product" class="col-form-label-lg">Product</label>
+        <input class="form-control" list="ProductlistOptions" id="product" placeholder="Type to search...">
+        <datalist id="ProductlistOptions">
+          <option value="155mmM2005BodyAssembly">
+          <option value="155mmM0121Body">
+          <option value="155mmM2000">
+          <option value="155mmM2003Body">
+          <option value="155mmM2003Ogive">
+        </datalist>
+        </div>
+
+      <div class="form-group" >
+            <label for="operation" class="col-form-label-lg">Operation</label>
+            <input type="text" class="form-control" id="operation"  placeholder="Enter Operation Number">
+
+          </div>
+
+        <div class="form-group">
+          <label for="operator" class="col-form-label-lg">Operator</label>
+          <input type="number" class="form-control" id="operator" placeholder="Enter Clock Number">
+        </div>
+
+      
+        <div class="form-group">
+            <label for="supervisor" class="col-form-label-lg">Supervisor</label>
+            <input type="text" class="form-control" id="supervisor" placeholder="Enter supervisor">
+        </div>
+
+        
+
+    </form>
+    <div class="d-flex justify-content-center">
+    <button type="submit" class="btn btn-primary" onclick="submitForm()">Login</button>
+    </div>
+
+
+  <script src="../static/js/axios.min.js"></script>
+  
+  <script src="../static/js/home.js"></script>
+  </body>
+
+
+</html>
